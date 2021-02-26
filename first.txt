@@ -6,3 +6,5 @@ This is the second part to check commit.
 THis is the third thinng.
 
 Fourth time.
+
+This is from master
