@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}CONTACT {% endblock title %}
+
+
+{% block body %}
+
+<div class="container-fluid my-0 px-0">
+
+ <img src="/static/4.jfif" class="d-block w-100" alt="...">
+ </div>
+ <div class="container" >
+ <h3 class="text-center py-4">CONTACT US</h3>
+ 
+ <form method="POST" action="/contact/">
+ {% csrf_token %}
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+  </div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" name="textarea" rows="3"></textarea>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+ 
+ </div>
+ 
+{% endblock body %}
+
